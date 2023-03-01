@@ -13,7 +13,7 @@ using namespace std;
 class Write : public Instruccion {
 
 public:
-    Write(string name);
+    Write();
         
     void comportamiento(stack<int>& pila, int& cont) const override;
 };

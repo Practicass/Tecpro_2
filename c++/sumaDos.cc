@@ -10,10 +10,15 @@
 
 
 SumaDos::SumaDos() : Programa(){
-            vInst[0] = new Read("read");
-            vInst[1] = new Read("read");
+            
+            cout<<"P"<<endl;
+            vInst[0] = new Read();
+            cout<<"e"<<endl;
+            vInst[1] = new Read();
+            cout<<"s"<<endl;
             vInst[2] = new Add();
-            vInst[3] = new Write("write");
+            cout<<"a"<<endl;
+            vInst[3] = new Write();
             cont = 4;
         }
 

@@ -13,7 +13,7 @@ using namespace std;
 class Read : public Instruccion {
 
 public:
-    Read(string name);
-        
+    Read();
+    
     void comportamiento(stack<int>& pila, int& cont) const override;
 };

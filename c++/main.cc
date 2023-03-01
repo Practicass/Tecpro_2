@@ -12,7 +12,10 @@ int main()
      
 
      Programa** prog;
+     cout<<"HOLA"<<endl;
      prog[0] = new SumaDos();
+     cout<<"HOLA"<<endl;
      prog[0]->listar();
+     cout<<"HOLA"<<endl;
      prog[0]->ejecutar();
 }

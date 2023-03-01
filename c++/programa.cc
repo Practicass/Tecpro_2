@@ -7,7 +7,7 @@
  */
 #include "programa.h"
 
-Programa::Programa(){}
+Programa::Programa(){ }
 
 void Programa::ejecutar(){
     cout<<"Ejecución:"<<endl;

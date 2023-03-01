@@ -9,8 +9,10 @@
 #include "read.h"
 using namespace std;
 
- Read::Read(string name) : 
-        Instruccion(name) { }
+ Read::Read() : 
+        Instruccion("read") {
+            cout<<nombre<<endl;
+        }
 
 void Read::comportamiento(stack<int>& pila, int& cont) const  { 
     cout << "?";

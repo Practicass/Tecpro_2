@@ -8,8 +8,8 @@
  */
 #include "write.h"
 
-Write::Write(string name) : 
-        Instruccion(name) { }
+Write::Write() : 
+        Instruccion("write") { }
         
 void Write::comportamiento(stack<int>& pila, int& cont) const{
     int a = pila.top();
