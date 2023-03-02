@@ -1,20 +1,21 @@
 /* ----------------------------------------------------------------------------
- * File:   write.cc
+ * File:   jumpif.h
  * Author: Pablo Angusto Delgado 842255 y Miguel Aréjula Aisa 850068
  * Date:   marzo 2023
  * Coms:   Práctica 2 de Tecpro 
  *         
  * -----------------------------------------------------------------------------
  */
-#include "write.h"
+#include "instruccion.h"
+#include <stack>
+using namespace std;
 
-Write::Write() : 
-        Instruccion("write") { }
-        
-void Write::comportamiento(stack<int>& pila, int& cont) const{
-    int a = pila.top();
-    pila.pop();
-    cout<< a<<endl;
-    cont++;
-
-}
+class Jumpif : public Instruccion {
+private:
+    int l;
+public:
+    Jumpif(int num);
+    
+    string mostrar() const;
+    void comportamiento(stack<int>& pila, int& cont) const override;
+};

@@ -1,5 +1,5 @@
 PROG:=main
-SRCS:=add.cc instruccion.cc write.cc read.cc sumaDos.cc programa.cc main.cc
+SRCS:=add.cc instruccion.cc write.cc read.cc sumaDos.cc programa.cc main.cc cuentaAtras.cc push.cc dup.cc jumpif.cc
 
 CXX:= g++ -std=c++11 -O2
 
@@ -25,5 +25,9 @@ write.o: write.cc write.h
 read.o: read.cc read.h
 sumaDos.o: sumaDos.cc sumaDos.h
 programa.o: programa.cc programa.h
-main.o: main.cc add.h instruccion.h write.h read.h sumaDos.h programa.h
-main.s: main.cc add.h instruccion.h write.h read.h sumaDos.h programa.h
+cuentaAtras.o: cuentaAtras.cc cuentaAtras.h
+push.o: push.cc push.h
+dup.o: dup.cc dup.h
+jumpif.o: jumpif.cc jumpif.h
+main.o: main.cc add.h instruccion.h write.h read.h sumaDos.h programa.h cuentaAtras.h push.h dup.h jumpif.h
+main.s: main.cc add.h instruccion.h write.h read.h sumaDos.h programa.h cuentaAtras.h push.h dup.h jumpif.h

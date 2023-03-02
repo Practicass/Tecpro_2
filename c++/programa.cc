@@ -12,15 +12,15 @@ Programa::Programa(){ }
 void Programa::ejecutar(){
     cout<<"Ejecución:"<<endl;
     int j = 0;
-    while(cont>0){
-       vInst[j]->comportamiento(pila, cont);
-       j++;
+    while(cont<fin){
+       vInst[cont]->comportamiento(pila, cont);
+       
     }
 }
 
 void Programa::listar(){
     cout<<"Programa:"<<endl;
-    for(int i = 0; i<cont;i++){
+    for(int i = 0; i<fin;i++){
         cout<<i<<"  "<<vInst[i]->mostrar() << endl;
     }
 }

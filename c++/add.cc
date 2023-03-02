@@ -12,9 +12,9 @@ Add::Add() :
 
 void Add::comportamiento(stack<int>& pila, int& cont) const { // es necesario override?
     int a=pila.top();
+    pila.pop();
     int b=pila.top();
     pila.pop();
-    pila.pop();
     pila.push(a+b);
-    cont--;
+    cont++;
 }

@@ -1,20 +1,24 @@
 /* ----------------------------------------------------------------------------
- * File:   write.cc
+ * File:   dup.cc
  * Author: Pablo Angusto Delgado 842255 y Miguel Aréjula Aisa 850068
  * Date:   marzo 2023
  * Coms:   Práctica 2 de Tecpro 
  *         
  * -----------------------------------------------------------------------------
  */
-#include "write.h"
+#include "dup.h"
+using namespace std;
 
-Write::Write() : 
-        Instruccion("write") { }
-        
-void Write::comportamiento(stack<int>& pila, int& cont) const{
-    int a = pila.top();
+Dup::Dup() : 
+        Instruccion("dup") { 
+            
+        }
+
+
+void Dup::comportamiento(stack<int>& pila, int& cont) const  { 
+    int aux = pila.top();
     pila.pop();
-    cout<< a<<endl;
+    pila.push(aux);
+    pila.push(aux);
     cont++;
-
-}
+}  

@@ -17,5 +17,5 @@ void Read::comportamiento(stack<int>& pila, int& cont) const  {
     int entrada;
     cin >> entrada;
     pila.push(entrada);
-    cont--;
+    cont++;
 }   

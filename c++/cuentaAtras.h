@@ -1,20 +1,23 @@
 /* ----------------------------------------------------------------------------
- * File:   write.cc
+ * File:   cuentaAtras.h
  * Author: Pablo Angusto Delgado 842255 y Miguel Aréjula Aisa 850068
  * Date:   marzo 2023
  * Coms:   Práctica 2 de Tecpro 
  *         
  * -----------------------------------------------------------------------------
  */
+
+#include "programa.h"
+#include "instruccion.h"
+#include "read.h"
+#include "add.h"
 #include "write.h"
+#include "push.h"
+#include "dup.h"
+#include "jumpif.h"
 
-Write::Write() : 
-        Instruccion("write") { }
-        
-void Write::comportamiento(stack<int>& pila, int& cont) const{
-    int a = pila.top();
-    pila.pop();
-    cout<< a<<endl;
-    cont++;
-
-}
+class CuentaAtras : public Programa {
+    
+    public:
+        CuentaAtras();
+};
