@@ -15,7 +15,8 @@ Jumpif::Jumpif(int num) :
         }
 
 string Jumpif::mostrar() const{
-   return nombre+" "+to_string(l);
+    return nombre+" "+to_string(l);
+   
 }
 void Jumpif::comportamiento(stack<int>& pila, int& cont) const  { 
     int aux=pila.top();

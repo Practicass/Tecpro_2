@@ -1,5 +1,5 @@
 /* ----------------------------------------------------------------------------
- * File:   jumpif.h
+ * File:   swap.h
  * Author: Pablo Angusto Delgado 842255 y Miguel Aréjula Aisa 850068
  * Date:   marzo 2023
  * Coms:   Práctica 2 de Tecpro 
@@ -10,12 +10,10 @@
 #include <stack>
 using namespace std;
 
-class Jumpif : public Instruccion {
-private:
-    int l;
+class Swap : public Instruccion {
+
 public:
-    Jumpif(int num);
+    Swap();
     
-    string mostrar() const override;
     void comportamiento(stack<int>& pila, int& cont) const override;
 };

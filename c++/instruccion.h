@@ -9,7 +9,7 @@
 #pragma once
 #include <iostream>
 #include <stack>
-using namespace std;
+using namespace std; // ha dicho en clase que no pongamos esto en el .h, solo en el .cc, sino algo no esta muy bien hecho, no quiere decir q esta mal.
 
 class Instruccion{
 protected:
@@ -17,7 +17,7 @@ protected:
     
 public:
     Instruccion(string nombre);
-    string mostrar() const;
+    virtual string mostrar() const;
     virtual void comportamiento(stack<int>& pila, int& cont) const;
 };
 

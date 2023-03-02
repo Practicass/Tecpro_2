@@ -1,21 +1,27 @@
 /* ----------------------------------------------------------------------------
- * File:   jumpif.h
+ * File:   over.cc
  * Author: Pablo Angusto Delgado 842255 y Miguel Aréjula Aisa 850068
  * Date:   marzo 2023
  * Coms:   Práctica 2 de Tecpro 
  *         
  * -----------------------------------------------------------------------------
  */
-#include "instruccion.h"
-#include <stack>
+#include "over.h"
 using namespace std;
 
-class Jumpif : public Instruccion {
-private:
-    int l;
-public:
-    Jumpif(int num);
-    
-    string mostrar() const override;
-    void comportamiento(stack<int>& pila, int& cont) const override;
-};
+Over::Over() : 
+        Instruccion("over") { 
+            
+        }
+
+
+void Over::comportamiento(stack<int>& pila, int& cont) const  { 
+    int a=pila.top();
+    pila.pop();
+    int b=pila.top();
+    pila.pop();
+    pila.push(b);
+    pila.push(a);
+    pila.push(b);
+    cont++;
+}  

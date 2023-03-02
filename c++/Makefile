@@ -1,5 +1,5 @@
 PROG:=main
-SRCS:=add.cc instruccion.cc write.cc read.cc sumaDos.cc programa.cc main.cc cuentaAtras.cc push.cc dup.cc jumpif.cc
+SRCS:=add.cc instruccion.cc write.cc read.cc sumaDos.cc programa.cc main.cc cuentaAtras.cc push.cc dup.cc jumpif.cc swap.cc over.cc mul.cc factorial.cc
 
 CXX:= g++ -std=c++11 -O2
 
@@ -29,5 +29,9 @@ cuentaAtras.o: cuentaAtras.cc cuentaAtras.h
 push.o: push.cc push.h
 dup.o: dup.cc dup.h
 jumpif.o: jumpif.cc jumpif.h
-main.o: main.cc add.h instruccion.h write.h read.h sumaDos.h programa.h cuentaAtras.h push.h dup.h jumpif.h
-main.s: main.cc add.h instruccion.h write.h read.h sumaDos.h programa.h cuentaAtras.h push.h dup.h jumpif.h
+swap.o: swap.cc swap.h
+over.o: over.cc over.h
+mul.o: mul.cc mul.h
+factorial.o: factorial.cc factorial.h
+main.o: main.cc add.h instruccion.h write.h read.h sumaDos.h programa.h cuentaAtras.h push.h dup.h jumpif.h swap.h over.h mul.h factorial.h
+main.s: main.cc add.h instruccion.h write.h read.h sumaDos.h programa.h cuentaAtras.h push.h dup.h jumpif.h swap.h over.h mul.h factorial.h
