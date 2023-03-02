@@ -11,13 +11,14 @@
 
 SumaDos::SumaDos() : Programa(){
             
-            cout<<"P"<<endl;
-            vInst[0] = new Read();
-            cout<<"e"<<endl;
+            //cout<<"P"<<endl;
+            vInst = new Instruccion*[4];
+            vInst[0]= new Read();
+            //cout<<"e"<<endl;
             vInst[1] = new Read();
-            cout<<"s"<<endl;
+            //cout<<"s"<<endl;
             vInst[2] = new Add();
-            cout<<"a"<<endl;
+            //cout<<"a"<<endl;
             vInst[3] = new Write();
             cont = 4;
         }

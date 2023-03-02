@@ -14,6 +14,7 @@ using namespace std;
 class Programa{
 protected:
     Instruccion** vInst;
+    //int** vNum;
     int cont;
     stack<int> pila;
 
