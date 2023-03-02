@@ -9,14 +9,14 @@
 #pragma once
 #include <stack>
 #include "instruccion.h"
-using namespace std;
+
 
 class Programa{
 protected:
     Instruccion** vInst;
     int fin;
     int cont;
-    stack<int> pila;
+    std::stack<int> pila;
 
 public:
     //Constructores

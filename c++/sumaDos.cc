@@ -7,6 +7,7 @@
  * -----------------------------------------------------------------------------
  */
 #include "sumaDos.h"
+using namespace std;
 
 
 SumaDos::SumaDos() : Programa(){

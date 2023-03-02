@@ -8,7 +8,7 @@
  */
 #include "instruccion.h"
 #include <stack>
-using namespace std;
+
 
 class Jumpif : public Instruccion {
 private:
@@ -16,6 +16,6 @@ private:
 public:
     Jumpif(int num);
     
-    string mostrar() const override;
-    void comportamiento(stack<int>& pila, int& cont) const override;
+    std::string mostrar() const override;
+    void comportamiento(std::stack<int>& pila, int& cont) const override;
 };

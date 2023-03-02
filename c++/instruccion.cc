@@ -8,6 +8,7 @@
  */
 
 #include "instruccion.h"
+using namespace std;
 
 Instruccion::Instruccion(string name){
     nombre = name;

@@ -16,6 +16,6 @@ private:
 public:
     Push(int num);
     
-    string mostrar() const;
+    string mostrar() const override;
     void comportamiento(stack<int>& pila, int& cont) const override;
 };

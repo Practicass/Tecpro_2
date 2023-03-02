@@ -8,12 +8,12 @@
  */
 #include "instruccion.h"
 #include <stack>
-using namespace std;
+
 
 class Over : public Instruccion {
 
 public:
     Over();
     
-    void comportamiento(stack<int>& pila, int& cont) const override;
+    void comportamiento(std::stack<int>& pila, int& cont) const override;
 };

@@ -7,7 +7,7 @@
  * -----------------------------------------------------------------------------
  */
 #include "write.h"
-
+using namespace std;
 Write::Write() : 
         Instruccion("write") { }
         

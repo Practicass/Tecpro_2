@@ -9,16 +9,16 @@
 #pragma once
 #include <iostream>
 #include <stack>
-using namespace std; // ha dicho en clase que no pongamos esto en el .h, solo en el .cc, sino algo no esta muy bien hecho, no quiere decir q esta mal.
+ // ha dicho en clase que no pongamos esto en el .h, solo en el .cc, sino algo no esta muy bien hecho, no quiere decir q esta mal.
 
 class Instruccion{
 protected:
-    string nombre;
+    std::string nombre;
     
 public:
-    Instruccion(string nombre);
-    virtual string mostrar() const;
-    virtual void comportamiento(stack<int>& pila, int& cont) const;
+    Instruccion(std::string nombre);
+    virtual std::string mostrar() const;
+    virtual void comportamiento(std::stack<int>& pila, int& cont) const;
 };
 
 

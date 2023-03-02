@@ -6,6 +6,7 @@
  * -----------------------------------------------------------------------------
  */
 #include "programa.h"
+using namespace std;
 
 Programa::Programa(){ }
 

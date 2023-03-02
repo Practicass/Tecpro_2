@@ -7,6 +7,7 @@
  * -----------------------------------------------------------------------------
  */
 #include "add.h"
+using namespace std;
 Add::Add() : 
         Instruccion("add") { }
 
