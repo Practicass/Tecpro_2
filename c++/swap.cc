@@ -13,7 +13,9 @@ Swap::Swap() :
         Instruccion("swap") { 
             
         }
-
+Swap::~Swap(){
+    
+}
 
 void Swap::comportamiento(stack<int>& pila, int& cont) const  { 
     int a=pila.top();

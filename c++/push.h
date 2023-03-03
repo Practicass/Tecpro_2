@@ -15,6 +15,7 @@ private:
     int c;
 public:
     Push(int num);
+    ~Push();
     
     string mostrar() const override;
     void comportamiento(stack<int>& pila, int& cont) const override;

@@ -19,4 +19,10 @@ SumaDos::SumaDos() : Programa(){
             vInst[3] = new Write();
             
         }
-
+SumaDos::~SumaDos(){
+    for (int i = 0; i < fin; i++)
+    {
+        delete vInst[i];
+    }
+    
+}

@@ -12,6 +12,10 @@ using namespace std;
  Read::Read() : 
         Instruccion("read") { }
 
+Read::~Read(){
+    
+}
+
 void Read::comportamiento(stack<int>& pila, int& cont) const  { 
     cout << "?";
     int entrada;

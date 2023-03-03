@@ -13,7 +13,9 @@ Dup::Dup() :
         Instruccion("dup") { 
             
         }
-
+Dup::~Dup(){
+    
+}
 
 void Dup::comportamiento(stack<int>& pila, int& cont) const  { 
     int aux = pila.top();

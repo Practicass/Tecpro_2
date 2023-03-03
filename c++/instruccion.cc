@@ -14,6 +14,10 @@ Instruccion::Instruccion(string name){
     nombre = name;
 }
 
+Instruccion::~Instruccion(){
+
+}
+
 string Instruccion::mostrar() const{
    return nombre;
     

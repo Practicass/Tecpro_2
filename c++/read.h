@@ -14,6 +14,7 @@ class Read : public Instruccion {
 
 public:
     Read();
+    ~Read();
     
     void comportamiento(std::stack<int>& pila, int& cont) const override;
 };

@@ -14,6 +14,10 @@ Jumpif::Jumpif(int num) :
             l=num;
         }
 
+Jumpif::~Jumpif(){
+    
+}
+
 string Jumpif::mostrar() const{
     return nombre+" "+to_string(l);
    

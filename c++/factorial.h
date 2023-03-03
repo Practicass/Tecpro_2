@@ -23,4 +23,5 @@ class Factorial : public Programa {
     
     public:
         Factorial();
+        ~Factorial();
 };

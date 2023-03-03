@@ -13,7 +13,9 @@ Mul::Mul() :
         Instruccion("mul") { 
             
         }
-
+Mul::~Mul(){
+    
+}
 
 void Mul::comportamiento(stack<int>& pila, int& cont) const  { 
     int a=pila.top();

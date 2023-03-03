@@ -11,6 +11,11 @@ using namespace std;
 Add::Add() : 
         Instruccion("add") { }
 
+Add::~Add(){
+    
+}
+
+
 void Add::comportamiento(stack<int>& pila, int& cont) const { // es necesario override?
     int a=pila.top();
     pila.pop();

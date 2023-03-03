@@ -10,6 +10,10 @@
 using namespace std;
 Write::Write() : 
         Instruccion("write") { }
+
+Write::~Write(){
+    
+}
         
 void Write::comportamiento(stack<int>& pila, int& cont) const{
     int a = pila.top();

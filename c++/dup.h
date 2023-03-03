@@ -14,6 +14,7 @@ class Dup : public Instruccion {
 
 public:
     Dup();
+    ~Dup();
     
     void comportamiento(std::stack<int>& pila, int& cont) const override;
 };

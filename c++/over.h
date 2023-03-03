@@ -14,6 +14,7 @@ class Over : public Instruccion {
 
 public:
     Over();
+    ~Over();
     
     void comportamiento(std::stack<int>& pila, int& cont) const override;
 };

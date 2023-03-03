@@ -10,6 +10,11 @@ using namespace std;
 
 Programa::Programa(){ }
 
+Programa::~Programa(){
+    
+    delete[] vInst;
+}
+
 void Programa::ejecutar(){
     cout<<"Ejecución:"<<endl;
     int j = 0;

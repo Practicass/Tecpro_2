@@ -14,6 +14,9 @@ Push::Push(int num) :
             c=num;
         }
 
+Push::~Push(){
+    
+}
 string Push::mostrar() const{
    return nombre+" "+to_string(c);
 }

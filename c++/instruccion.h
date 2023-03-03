@@ -9,14 +9,18 @@
 #pragma once
 #include <iostream>
 #include <stack>
- // ha dicho en clase que no pongamos esto en el .h, solo en el .cc, sino algo no esta muy bien hecho, no quiere decir q esta mal.
+ 
 
 class Instruccion{
 protected:
     std::string nombre;
     
 public:
+    //Constructor
     Instruccion(std::string nombre);
+    //Deconstructor
+    ~Instruccion();
+
     virtual std::string mostrar() const;
     virtual void comportamiento(std::stack<int>& pila, int& cont) const;
 };

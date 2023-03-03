@@ -13,7 +13,10 @@
 class Add : public Instruccion {
     
     public:
+    //Constructor
     Add();
+    //Deconstructor
+    ~Add();
         
     void comportamiento(std::stack<int>& pila, int& cont) const override;
 };

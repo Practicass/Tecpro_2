@@ -15,6 +15,7 @@ private:
     int l;
 public:
     Jumpif(int num);
+    ~Jumpif();
     
     std::string mostrar() const override;
     void comportamiento(std::stack<int>& pila, int& cont) const override;

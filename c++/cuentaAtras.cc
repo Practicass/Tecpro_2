@@ -20,4 +20,14 @@ CuentaAtras::CuentaAtras() : Programa(){
             vInst[5] = new Dup();
             vInst[6] = new Jumpif(1);
             cont=0;
-        }
+}
+
+CuentaAtras::~CuentaAtras(){
+   for (int i = 0; i < fin; i++)
+    {
+        delete vInst[i];
+    }
+    
+}
+
+    

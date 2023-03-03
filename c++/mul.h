@@ -14,6 +14,7 @@ class Mul : public Instruccion {
 
 public:
     Mul();
+    ~Mul();
     
     void comportamiento(std::stack<int>& pila, int& cont) const override;
 };

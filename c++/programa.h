@@ -21,6 +21,7 @@ protected:
 public:
     //Constructores
     Programa();
+    ~Programa();
     virtual void ejecutar();
     virtual void listar();
 };

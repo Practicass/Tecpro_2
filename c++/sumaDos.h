@@ -17,6 +17,7 @@ class SumaDos : public Programa {
     
     public:
         SumaDos();
+        ~SumaDos();
 };
 
 

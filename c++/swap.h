@@ -14,6 +14,7 @@ class Swap : public Instruccion {
 
 public:
     Swap();
+    ~Swap();
     
     void comportamiento(std::stack<int>& pila, int& cont) const override;
 };

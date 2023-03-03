@@ -28,3 +28,9 @@ Factorial::Factorial() : Programa(){
             vInst[13] = new Write();
             cont=0;
         }
+Factorial::~Factorial(){
+    for (int i = 0; i < fin; i++)
+    {
+        delete vInst[i];
+    }
+}

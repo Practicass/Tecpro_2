@@ -13,7 +13,9 @@ Over::Over() :
         Instruccion("over") { 
             
         }
-
+Over::~Over(){
+    
+}
 
 void Over::comportamiento(stack<int>& pila, int& cont) const  { 
     int a=pila.top();

@@ -19,5 +19,8 @@
 class CuentaAtras : public Programa {
     
     public:
+        //Constructor
         CuentaAtras();
+        //Deconstructor
+        ~CuentaAtras();
 };

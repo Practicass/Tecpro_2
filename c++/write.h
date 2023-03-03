@@ -14,6 +14,7 @@ class Write : public Instruccion {
 
 public:
     Write();
+    ~Write();
         
     void comportamiento(std::stack<int>& pila, int& cont) const override;
 };
