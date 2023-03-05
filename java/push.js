@@ -1,0 +1,38 @@
+/* ----------------------------------------------------------------------------
+ * File:   push.h
+ * Author: Pablo Angusto Delgado 842255 y Miguel Aréjula Aisa 850068
+ * Date:   marzo 2023
+ * Coms:   Práctica 2 de Tecpro 
+ *         
+ * -----------------------------------------------------------------------------
+ */
+// #include "instruccion.h"
+// #include <stack>
+// using namespace std;
+
+// class Push : public Instruccion {
+// private:
+//     int c;
+// public:
+//     Push(int num);
+//     ~Push();
+    
+//     string mostrar() const override;
+//     void comportamiento(stack<int>& pila, int& cont) const override;
+// };
+
+// Push::Push(int num) : 
+//         Instruccion("push") { 
+//             c=num;
+//         }
+
+// Push::~Push(){
+    
+// }
+// string Push::mostrar() const{
+//    return nombre+" "+to_string(c);
+// }
+// void Push::comportamiento(stack<int>& pila, int& cont) const  { 
+//     pila.push(c);
+//     cont++;
+// }   
