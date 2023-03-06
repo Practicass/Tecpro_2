@@ -7,5 +7,12 @@
  * -----------------------------------------------------------------------------
  */
 public class  Add extends Instruccion {
-    
+    public Add(){
+        super("add");
+    }
+
+    public void comportamiento(Programa.ProgramaInfo prog){
+        prog.pushP(prog.popP()+prog.popP());
+        prog.aumentar(1);
+    }
 }

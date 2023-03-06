@@ -44,6 +44,9 @@ public class Programa {
 
     public void listar(){
         System.out.println("Programa: ");
+        for (Integer i = 0; i<this.info.finP();++i){
+            System.out.println(i+" "+this.vInst[i].mostrar());
+        }
         
     }
 
