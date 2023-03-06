@@ -6,6 +6,13 @@
  *         
  * -----------------------------------------------------------------------------
  */
-public class Write {
-    
+public class Write extends Instruccion {
+    public Write(){
+        super("write");
+    }
+
+    public void comportamiento(Programa.ProgramaInfo prog){
+        System.out.println(prog.popP());
+        prog.aumentar(1);
+    }
 }
